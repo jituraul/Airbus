@@ -36,7 +36,6 @@ sap.ui.define([
             },
             onItemPress: function (oEvent) {
                 var oItem = oEvent.getParameter("listItem");
-                debugger;
                 var oPath = oItem.getBindingContextPath();;
                 var oId = oPath.split("'")[1];
                 this._onNext(oId);
