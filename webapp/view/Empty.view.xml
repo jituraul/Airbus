@@ -1,0 +1,16 @@
+<mvc:View
+	controllerName="sam.zairbus1.controller.Empty"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+<Page title="Empty Page">
+<content>
+
+<Image id="idImage" width="400px"  />
+    
+</content>
+</Page>
+</mvc:View>

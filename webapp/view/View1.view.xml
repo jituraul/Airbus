@@ -1,0 +1,11 @@
+<mvc:View controllerName="sam.zairbus1.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page title="Master Page" titleAlignment="center">
+        <content>
+            <SearchField id="idSearch" liveChange=".onLiveChange" />
+            <List id="idList" items="{/VbakSet}" growing="true" growingThreshold="10" itemPress=".onItemPress">
+                <ObjectListItem intro="{Vbeln}" title="{Vkorg}" number="{Netwr}" numberUnit="{Waerk}" numberState="{ path : 'Netwr' , formatter :'.formatter.onStatus' }" type="Navigation" />
+
+            </List>
+        </content>
+    </Page>
+</mvc:View>
