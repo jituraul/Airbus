@@ -98,6 +98,11 @@
           "name": "Detail",
           "target" :[ "Master","Detail"]
 
+        },
+        {
+          "pattern" : "Add",
+          "name" : "Add",
+          "target" : ["Master","Add"]
         }
       ],
       "targets": {
@@ -118,6 +123,12 @@
              "controlAggregation": "detailPages",
              "viewId": "Empty",
              "viewName": "Empty"
+        },
+        "Add" : {
+           "viewType" : "XML",
+           "controlAggregation" : "detailPages",
+           "viewId" : "Add",
+           "viewName" : "Add"
         }
       }
     },

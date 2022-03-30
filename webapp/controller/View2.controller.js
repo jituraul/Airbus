@@ -1,11 +1,14 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+    "sam/zairbus1/utils/formatter",
 ], function (
-    Controller
+    Controller,
+    formatter
 ) {
     "use strict";
 
     return Controller.extend("sam.zairbus1.controller.View2", {
+        formatter : formatter,
         onInit: function () {
             this.oRouter = this.getOwnerComponent().getRouter();
             this.oRouter.getRoute("Detail").attachPatternMatched(this._onBinding, this);

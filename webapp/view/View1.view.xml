@@ -6,6 +6,13 @@
                 <ObjectListItem intro="{Vbeln}" title="{Vkorg}" number="{Netwr}" numberUnit="{Waerk}" numberState="{ path : 'Netwr' , formatter :'.formatter.onStatus' }" type="Navigation" />
 
             </List>
+            
         </content>
+        <footer  >
+           <OverflowToolbar>
+              <Button Text="Create" press=".onCreate" icon="sap-icon://create"/>
+           </OverflowToolbar>
+
+         </footer>   
     </Page>
 </mvc:View>

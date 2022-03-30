@@ -1,0 +1,31 @@
+<mvc:View controllerName="sam.zairbus1.controller.Add" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" displayBlock="true" height="100%" busyIndicatorDelay="0">
+    <Page>
+        <VBox class="sapUiSmallMargin">
+            <f:SimpleForm id="SimpleFormChange354" editable="True" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="True" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="True">
+                <f:content>
+                    <Label text="Vbeln" />
+                    <Input value="{Local>/SalesOrderData/Vbeln}" />
+                    <Label text="Vbtyp" />
+                    <Input value="{Local>/SalesOrderData/Vbtyp}" />
+                    <Label text="Vkorg" />
+                    <Input value="{Local>/SalesOrderData/Vkorg}" />
+                    <Label text="Spart" />
+                    <Input value="{Local>/SalesOrderData/Spart}" />
+                    <Label text="Netwr" />
+                    <Input value="{Local>/SalesOrderData/Netwr}" />
+                    <Label text="Waerk" />
+                    <Input value="{Local>/SalesOrderData/Waerk}" />
+                    <Label text="Kunnr" labelFor="Input" />
+                    <Input value="{Local>/SalesOrderData/Kunnr}" />
+                </f:content>
+            </f:SimpleForm>
+        </VBox>
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button text="Save" press=".onSave" />
+                <Button text="Cancel" press=".onCancel" />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

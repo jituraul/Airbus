@@ -45,6 +45,11 @@ sap.ui.define([
                     Vbeln: oId
                 });
 
+            },
+            onCreate: function () {
+               debugger; 
+              this.oRouter.navTo("Add");
+
             }
         });
     });
