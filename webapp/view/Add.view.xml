@@ -4,7 +4,7 @@
             <f:SimpleForm id="SimpleFormChange354" editable="True" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="True" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="True">
                 <f:content>
                     <Label text="Vbeln" />
-                    <Input value="{Local>/SalesOrderData/Vbeln}" />
+                    <Input value="{Local>/SalesOrderData/Vbeln}" change=".onEnter" />
                     <Label text="Vbtyp" />
                     <Input value="{Local>/SalesOrderData/Vbtyp}" />
                     <Label text="Vkorg" />

@@ -47,6 +47,27 @@ sap.ui.define([
         onCancel: function () {
 
 
+        },
+        onEnter: function (oEvent) {
+            // debugger;
+            var oId = oEvent.getParameter("value");
+            var oModel = this.getView().getModel();
+            var oPath = "/VbakSet('" + oId + "')";
+            var that = this;
+            oModel.read(oPath, {
+                success: function (data) {
+                    that.oLocalModel.setProperty("/SalesOrderData", data);
+                },
+                error: function (error) {
+                   debugger; 
+                   MessageToast.show(error.message);
+                }
+
+            })
+
+
+
+
         }
     });
 });
