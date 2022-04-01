@@ -1,0 +1,31 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:f="sap.ui.layout.form">
+    <VBox class="sapUiSmallMargin">
+        <f:SimpleForm id="idSimpleFormChange" editable="false" visible="false" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="True" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="True">
+            <f:content>
+                <Label text="Vbeln" />
+                <Input value="{oLocal>/SalesOrderData/Vbeln}" change=".onEnter" />
+                <Label text="Vbtyp" />
+                <Input value="{oLocal>/SalesOrderData/Vbtyp}" />
+                <Label text="Vkorg" />
+                <Input value="{oLocal>/SalesOrderData/Vkorg}" />
+                <Label text="Spart" />
+                <Input value="{oLocal>/SalesOrderData/Spart}" />
+                <Label text="Netwr" />
+                <Input value="{oLocal>/SalesOrderData/Netwr}" />
+                <Label text="Waerk" />
+                <Input value="{oLocal>/SalesOrderData/Waerk}" />
+                <Label text="Kunnr" labelFor="Input" />
+                <Input value="{oLocal>/SalesOrderData/Kunnr}" />
+            </f:content>
+            <f:toolbar>
+                <OverflowToolbar>
+                    <ToolbarSpacer />
+                    <Button text="Save" visible="true" press=".onSaveData" />
+                    <Button text="Cancel" visible="true" press=".onCancel"/>
+                </OverflowToolbar>
+            </f:toolbar>
+        </f:SimpleForm>
+
+    </VBox>
+
+</c:FragmentDefinition>

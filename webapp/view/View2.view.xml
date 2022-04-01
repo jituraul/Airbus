@@ -2,13 +2,28 @@
 	controllerName="sam.zairbus1.controller.View2"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
 	displayBlock="true"
 	height="100%"
 	busyIndicatorDelay="0"
 >
 <Page title="Detail Page">
+ <headerContent>
+	<ToolbarSpacer width="200px"/>	
+
+	<Button text="Edit" press=".onEdit"/>
+ </headerContent>
+
 <ObjectHeader intro="{Vbeln}" title="{Vkorg}" number="{Netwr}" 
           numberUnit="{Waerk}" numberState="{ path : 'Netwr' , formatter :'.formatter.onStatus' }"/>
 
+<IconTabBar>
+ <items>	
+  <IconTabFilter id="idFilter" text="Details" showAll="true">
+    <core:Fragment type="XML" fragmentName="sam.zairbus1.fragment.Display"/>  
+    <core:Fragment type="XML" fragmentName="sam.zairbus1.fragment.Change"/>  
+  </IconTabFilter>
+</items> 
+</IconTabBar>
 </Page>
 </mvc:View>

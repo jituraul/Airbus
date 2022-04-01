@@ -26,9 +26,9 @@ sap.ui.define([
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
             },
-            destroy: function() {
+            destroy: function(){
               
-                UIComponent.prototype.destory.apply(this,arguments);
+                UIComponent.prototype.destroy.apply(this, arguments);
 
             }
         });

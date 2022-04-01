@@ -1,0 +1,30 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:f="sap.ui.layout.form">
+    <VBox class="sapUiSmallMargin">
+
+        <f:SimpleForm id="idSimpleFormDisplay" visible="true" layout="ResponsiveGridLayout" title=" Display Address" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="True" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="True">
+            <f:toolbar>
+                <OverflowToolbar>
+                    <ToolbarSpacer />
+                    <Button textAlign="left" text="Edit" visible="true" press=".onEdit" />
+                </OverflowToolbar>
+            </f:toolbar>
+            <f:content>
+                <Label text="Vbeln" />
+                <Text text="{oLocal>/SalesOrderData/Vbeln}" change=".onEnter" />
+                <Label text="Vbtyp" />
+                <Text text="{oLocal>/SalesOrderData/Vbtyp}" />
+                <Label text="Vkorg" />
+                <Text text="{oLocal>/SalesOrderData/Vkorg}" />
+                <Label text="Spart" />
+                <Text text="{oLocal>/SalesOrderData/Spart}" />
+                <Label text="Netwr" />
+                <Text text="{oLocal>/SalesOrderData/Netwr}" />
+                <Label text="Waerk" />
+                <Text text="{oLocal>/SalesOrderData/Waerk}" />
+                <Label text="Kunnr" labelFor="Input" />
+                <Text text="{oLocal>/SalesOrderData/Kunnr}" />
+            </f:content>
+        </f:SimpleForm>
+
+    </VBox>
+</c:FragmentDefinition>
